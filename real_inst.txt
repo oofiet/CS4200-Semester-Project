@@ -1,0 +1,34 @@
+//if test (successful)
+addi t0, x0, 1
+addi t1, x0, 1
+beq t0, t1, 8
+add t1, t1, t1 //skipped
+
+//if test (failed)
+beq t0, x0, 8
+add t0, t0, t0
+
+//single loop test
+addi t0, x0, 0
+addi t1, x0, 10
+addi t0, t0, 1
+blt t0, t1, -4
+
+//nested loop test
+addi t0, x0, 0
+addi t1, x0, 10
+addi t2, x0, 0
+addi t2, t2, 1
+blt t2, t1, -4
+addi t0, t0, 1
+blt t0, t1, -4
+
+//if test (successful) 2
+addi t0, x0, 1
+addi t1, x0, 1
+beq t0, t1, 8
+add t1, t1, t1 //skipped
+
+//if test (failed) 2
+beq t0, x0, 8
+add t0, t0, t0

@@ -1,0 +1,801 @@
+Cycle 0
+PC = 4
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 0, 'instr': 1049235}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 1
+PC = 8
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 4, 'instr': 1049363}
+ID/EX Reg = {'valid': 1, 'pc': 0, 'pc_plus4': 4, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 0, 'rs2': 1, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 2
+PC = 16
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 8, 'instr': 6456419}
+ID/EX Reg = {'valid': 1, 'pc': 4, 'pc_plus4': 8, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 0, 'rs2': 1, 'rd': 6, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 4, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 5, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 4}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 3
+PC = 24
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 16, 'instr': 164963}
+ID/EX Reg = {'valid': 1, 'pc': 8, 'pc_plus4': 12, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'imm': 8, 'rs1': 5, 'rs2': 6, 'rd': 8, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 8, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 6, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 8}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 4, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 5, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 4}
+
+Cycle 4
+PC = 28
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 24, 'instr': 659}
+ID/EX Reg = {'valid': 1, 'pc': 16, 'pc_plus4': 20, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'imm': 8, 'rs1': 5, 'rs2': 0, 'rd': 8, 'rs1_val': 1, 'rs2_val': 0, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 12, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'rd': 8, 'alu_res': 0, 'rs2_val_fwd': 1, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 12}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 8, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 6, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 8}
+
+Cycle 5
+PC = 20
+Stall Flag = False
+Flush Flag = True
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 24, 'pc_plus4': 28, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 20, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'rd': 8, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 20}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 12, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'rd': 8, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 12}
+
+Cycle 6
+PC = 24
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 20, 'instr': 5407411}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 20, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'rd': 8, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 20}
+
+Cycle 7
+PC = 28
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 24, 'instr': 659}
+ID/EX Reg = {'valid': 1, 'pc': 20, 'pc_plus4': 24, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 5, 'rs2': 5, 'rd': 5, 'rs1_val': 1, 'rs2_val': 1, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 8
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 28, 'instr': 10486547}
+ID/EX Reg = {'valid': 1, 'pc': 24, 'pc_plus4': 28, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 24, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'rd': 5, 'alu_res': 2, 'rs2_val_fwd': 1, 'mem_addr': 2, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 24}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 9
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 28, 'pc_plus4': 32, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 10, 'rs1': 0, 'rs2': 10, 'rd': 6, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 28, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'rd': 5, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 28}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 24, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'rd': 5, 'alu_res': 2, 'mem_data': 0, 'wb_val_for_jumps': 24}
+
+Cycle 10
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 2, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 32, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'rd': 6, 'alu_res': 10, 'rs2_val_fwd': 0, 'mem_addr': 10, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 32}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 28, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'rd': 5, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 28}
+
+Cycle 11
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 0, 'rs2_val': 1, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 32, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'rd': 6, 'alu_res': 10, 'mem_data': 0, 'wb_val_for_jumps': 32}
+
+Cycle 12
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967287, 'rs2_val_fwd': 10, 'mem_addr': 4294967287, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 13
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 1, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 2, 'rs2_val_fwd': 0, 'mem_addr': 2, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967287, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 14
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 1, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967288, 'rs2_val_fwd': 10, 'mem_addr': 4294967288, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 2, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 15
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 2, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 3, 'rs2_val_fwd': 0, 'mem_addr': 3, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967288, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 16
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 2, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967289, 'rs2_val_fwd': 10, 'mem_addr': 4294967289, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 3, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 17
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 3, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 4, 'rs2_val_fwd': 0, 'mem_addr': 4, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967289, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 18
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 3, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967290, 'rs2_val_fwd': 10, 'mem_addr': 4294967290, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 4, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 19
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 4, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 5, 'rs2_val_fwd': 0, 'mem_addr': 5, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967290, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 20
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 4, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967291, 'rs2_val_fwd': 10, 'mem_addr': 4294967291, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 5, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 21
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 5, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 6, 'rs2_val_fwd': 0, 'mem_addr': 6, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967291, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 22
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 5, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967292, 'rs2_val_fwd': 10, 'mem_addr': 4294967292, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 6, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 23
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 6, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 7, 'rs2_val_fwd': 0, 'mem_addr': 7, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967292, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 24
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 6, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967293, 'rs2_val_fwd': 10, 'mem_addr': 4294967293, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 7, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 25
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 7, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 8, 'rs2_val_fwd': 0, 'mem_addr': 8, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967293, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 26
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 7, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967294, 'rs2_val_fwd': 10, 'mem_addr': 4294967294, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 8, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 27
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 8, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 9, 'rs2_val_fwd': 0, 'mem_addr': 9, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967294, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 28
+PC = 32
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 36, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 8, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967295, 'rs2_val_fwd': 10, 'mem_addr': 4294967295, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 9, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 29
+PC = 36
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 32, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 36, 'pc_plus4': 40, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 9, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 10, 'rs2_val_fwd': 0, 'mem_addr': 10, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 36}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967295, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 30
+PC = 40
+Stall Flag = False
+Flush Flag = True
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 32, 'pc_plus4': 36, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 9, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 0, 'rs2_val_fwd': 10, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 40}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 36, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 10, 'mem_data': 0, 'wb_val_for_jumps': 36}
+
+Cycle 31
+PC = 44
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 40, 'instr': 659}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 40, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 40}
+
+Cycle 32
+PC = 48
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 44, 'instr': 10486547}
+ID/EX Reg = {'valid': 1, 'pc': 40, 'pc_plus4': 44, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 33
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 48, 'instr': 915}
+ID/EX Reg = {'valid': 1, 'pc': 44, 'pc_plus4': 48, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 10, 'rs1': 0, 'rs2': 10, 'rd': 6, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 44, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'rd': 5, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 44}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 34
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 48, 'pc_plus4': 52, 'd': {'instr': 915, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 0, 'imm_J': 0}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 7, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 48, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'rd': 6, 'alu_res': 10, 'rs2_val_fwd': 0, 'mem_addr': 10, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 48}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 44, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 659, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 0, 'imm_J': 0}, 'rd': 5, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 44}
+
+Cycle 35
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 52, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 915, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 0, 'imm_J': 0}, 'rd': 7, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 52}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 48, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 10486547, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 10, 'funct7': 0, 'imm_I': 10, 'imm_S': 6, 'imm_B': 6, 'imm_U': 10485760, 'imm_J': 10}, 'rd': 6, 'alu_res': 10, 'mem_data': 0, 'wb_val_for_jumps': 48}
+
+Cycle 36
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 0, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 52, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 915, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 0, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 0, 'imm_J': 0}, 'rd': 7, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 52}
+
+Cycle 37
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967287, 'rs2_val_fwd': 10, 'mem_addr': 4294967287, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 38
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 1, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 2, 'rs2_val_fwd': 0, 'mem_addr': 2, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967287, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 39
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 1, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967288, 'rs2_val_fwd': 10, 'mem_addr': 4294967288, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 2, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 40
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 2, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 3, 'rs2_val_fwd': 0, 'mem_addr': 3, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967288, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 41
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 2, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967289, 'rs2_val_fwd': 10, 'mem_addr': 4294967289, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 3, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 42
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 3, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 4, 'rs2_val_fwd': 0, 'mem_addr': 4, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967289, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 43
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 3, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967290, 'rs2_val_fwd': 10, 'mem_addr': 4294967290, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 4, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 44
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 4, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 5, 'rs2_val_fwd': 0, 'mem_addr': 5, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967290, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 45
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 4, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967291, 'rs2_val_fwd': 10, 'mem_addr': 4294967291, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 5, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 46
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 5, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 6, 'rs2_val_fwd': 0, 'mem_addr': 6, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967291, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 47
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 5, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967292, 'rs2_val_fwd': 10, 'mem_addr': 4294967292, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 6, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 48
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 6, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 7, 'rs2_val_fwd': 0, 'mem_addr': 7, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967292, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 49
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 6, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967293, 'rs2_val_fwd': 10, 'mem_addr': 4294967293, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 7, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 50
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 7, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 8, 'rs2_val_fwd': 0, 'mem_addr': 8, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967293, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 51
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 7, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967294, 'rs2_val_fwd': 10, 'mem_addr': 4294967294, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 8, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 52
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 8, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 9, 'rs2_val_fwd': 0, 'mem_addr': 9, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967294, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 53
+PC = 52
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 56, 'instr': 4267953891}
+ID/EX Reg = {'valid': 1, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 8, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967295, 'rs2_val_fwd': 10, 'mem_addr': 4294967295, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 9, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 54
+PC = 56
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 52, 'instr': 1278867}
+ID/EX Reg = {'valid': 1, 'pc': 56, 'pc_plus4': 60, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 7, 'rs2': 6, 'rd': 29, 'rs1_val': 9, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 10, 'rs2_val_fwd': 0, 'mem_addr': 10, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 56}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 4294967295, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 55
+PC = 60
+Stall Flag = False
+Flush Flag = True
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 52, 'pc_plus4': 56, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 7, 'rs2': 1, 'rd': 7, 'rs1_val': 9, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 0, 'rs2_val_fwd': 10, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 60}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 56, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1278867, 'opcode': 19, 'rd': 7, 'funct3': 0, 'rs1': 7, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 7, 'imm_B': 2054, 'imm_U': 1277952, 'imm_J': 231424}, 'rd': 7, 'alu_res': 10, 'mem_data': 0, 'wb_val_for_jumps': 56}
+
+Cycle 56
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 60, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267953891, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 7, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267950080, 'imm_J': -800794}, 'rd': 29, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 60}
+
+Cycle 57
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 58
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 0, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 59
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967287, 'rs2_val_fwd': 10, 'mem_addr': 4294967287, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 60
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 1, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 2, 'rs2_val_fwd': 0, 'mem_addr': 2, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967287, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 61
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 1, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967288, 'rs2_val_fwd': 10, 'mem_addr': 4294967288, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 2, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 62
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 2, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 3, 'rs2_val_fwd': 0, 'mem_addr': 3, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967288, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 63
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 2, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967289, 'rs2_val_fwd': 10, 'mem_addr': 4294967289, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 3, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 64
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 3, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 4, 'rs2_val_fwd': 0, 'mem_addr': 4, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967289, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 65
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 3, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967290, 'rs2_val_fwd': 10, 'mem_addr': 4294967290, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 4, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 66
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 4, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 5, 'rs2_val_fwd': 0, 'mem_addr': 5, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967290, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 67
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 4, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967291, 'rs2_val_fwd': 10, 'mem_addr': 4294967291, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 5, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 68
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 5, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 6, 'rs2_val_fwd': 0, 'mem_addr': 6, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967291, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 69
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 5, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967292, 'rs2_val_fwd': 10, 'mem_addr': 4294967292, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 6, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 70
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 6, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 7, 'rs2_val_fwd': 0, 'mem_addr': 7, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967292, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 71
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 6, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967293, 'rs2_val_fwd': 10, 'mem_addr': 4294967293, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 7, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 72
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 7, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 8, 'rs2_val_fwd': 0, 'mem_addr': 8, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967293, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 73
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 7, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967294, 'rs2_val_fwd': 10, 'mem_addr': 4294967294, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 8, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 74
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 8, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 9, 'rs2_val_fwd': 0, 'mem_addr': 9, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967294, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 75
+PC = 60
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 64, 'instr': 4267888355}
+ID/EX Reg = {'valid': 1, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 8, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967295, 'rs2_val_fwd': 10, 'mem_addr': 4294967295, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 9, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 76
+PC = 64
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 60, 'instr': 1213075}
+ID/EX Reg = {'valid': 1, 'pc': 64, 'pc_plus4': 68, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'imm': -4, 'rs1': 5, 'rs2': 6, 'rd': 29, 'rs1_val': 9, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 10, 'rs2_val_fwd': 0, 'mem_addr': 10, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 64}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 4294967295, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 77
+PC = 68
+Stall Flag = False
+Flush Flag = True
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 60, 'pc_plus4': 64, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 5, 'rs2': 1, 'rd': 5, 'rs1_val': 9, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 0, 'rs2_val_fwd': 10, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 68}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 64, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1213075, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1212416, 'imm_J': 165888}, 'rd': 5, 'alu_res': 10, 'mem_data': 0, 'wb_val_for_jumps': 64}
+
+Cycle 78
+PC = 72
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 68, 'instr': 1049235}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 68, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'blt', 'IsNOP': 0}, 'd': {'instr': 4267888355, 'opcode': 99, 'rd': 29, 'funct3': 4, 'rs1': 5, 'rs2': 6, 'funct7': 127, 'imm_I': -26, 'imm_S': -3, 'imm_B': -4, 'imm_U': 4267884544, 'imm_J': -866330}, 'rd': 29, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 68}
+
+Cycle 79
+PC = 76
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 72, 'instr': 1049363}
+ID/EX Reg = {'valid': 1, 'pc': 68, 'pc_plus4': 72, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 0, 'rs2': 1, 'rd': 5, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 80
+PC = 84
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 76, 'instr': 6456419}
+ID/EX Reg = {'valid': 1, 'pc': 72, 'pc_plus4': 76, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'imm': 1, 'rs1': 0, 'rs2': 1, 'rd': 6, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 72, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 5, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 72}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 81
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 84, 'instr': 164963}
+ID/EX Reg = {'valid': 1, 'pc': 76, 'pc_plus4': 80, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'imm': 8, 'rs1': 5, 'rs2': 6, 'rd': 8, 'rs1_val': 10, 'rs2_val': 10, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 76, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 6, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 76}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 72, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049235, 'opcode': 19, 'rd': 5, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 5, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 72}
+
+Cycle 82
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 1, 'pc': 84, 'pc_plus4': 88, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'imm': 8, 'rs1': 5, 'rs2': 0, 'rd': 8, 'rs1_val': 1, 'rs2_val': 0, 'alu_op': 'SUB'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 80, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'rd': 8, 'alu_res': 0, 'rs2_val_fwd': 1, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 80}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 76, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 1, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': 'I', 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 1049363, 'opcode': 19, 'rd': 6, 'funct3': 0, 'rs1': 0, 'rs2': 1, 'funct7': 0, 'imm_I': 1, 'imm_S': 6, 'imm_B': 6, 'imm_U': 1048576, 'imm_J': 2048}, 'rd': 6, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 76}
+
+Cycle 83
+PC = 88
+Stall Flag = False
+Flush Flag = True
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 88, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'rd': 8, 'alu_res': 1, 'rs2_val_fwd': 0, 'mem_addr': 1, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 88}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 80, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 6456419, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 6, 'funct7': 0, 'imm_I': 6, 'imm_S': 8, 'imm_B': 8, 'imm_U': 6455296, 'imm_J': 163846}, 'rd': 8, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 80}
+
+Cycle 84
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 1, 'pc': 88, 'instr': 5407411}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 88, 'c': {'RegWrite': 0, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 1, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'SUB', 'ImmSel': 'B', 'BrType': 'beq', 'IsNOP': 0}, 'd': {'instr': 164963, 'opcode': 99, 'rd': 8, 'funct3': 0, 'rs1': 5, 'rs2': 0, 'funct7': 0, 'imm_I': 0, 'imm_S': 8, 'imm_B': 8, 'imm_U': 163840, 'imm_J': 163840}, 'rd': 8, 'alu_res': 1, 'mem_data': 0, 'wb_val_for_jumps': 88}
+
+Cycle 85
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 1, 'pc': 88, 'pc_plus4': 92, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'imm': 0, 'rs1': 5, 'rs2': 5, 'rd': 5, 'rs1_val': 1, 'rs2_val': 1, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 86
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 1, 'pc_plus4': 92, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'rd': 5, 'alu_res': 2, 'rs2_val_fwd': 1, 'mem_addr': 2, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 92}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
+Cycle 87
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 1, 'pc_plus4': 92, 'c': {'RegWrite': 1, 'MemRead': 0, 'MemWrite': 0, 'MemToReg': 0, 'ALUSrc': 0, 'Branch': 0, 'Jump': 0, 'JumpReg': 0, 'ALUOp': 'ADD', 'ImmSel': None, 'BrType': None, 'IsNOP': 0}, 'd': {'instr': 5407411, 'opcode': 51, 'rd': 5, 'funct3': 0, 'rs1': 5, 'rs2': 5, 'funct7': 0, 'imm_I': 5, 'imm_S': 5, 'imm_B': 2052, 'imm_U': 5406720, 'imm_J': 165892}, 'rd': 5, 'alu_res': 2, 'mem_data': 0, 'wb_val_for_jumps': 92}
+
+Cycle 88
+PC = 92
+Stall Flag = False
+Flush Flag = False
+IF/ID Reg = {'valid': 0, 'pc': 0, 'instr': 0}
+ID/EX Reg = {'valid': 0, 'pc': 0, 'pc_plus4': 0, 'd': None, 'c': None, 'imm': 0, 'rs1': 0, 'rs2': 0, 'rd': 0, 'rs1_val': 0, 'rs2_val': 0, 'alu_op': 'ADD'}
+EX/MEM Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'rs2_val_fwd': 0, 'mem_addr': 0, 'branch_taken': 0, 'next_pc': 0, 'wb_val_for_jumps': 0}
+MEM/WB Reg = {'valid': 0, 'pc_plus4': 0, 'c': None, 'd': None, 'rd': 0, 'alu_res': 0, 'mem_data': 0, 'wb_val_for_jumps': 0}
+
