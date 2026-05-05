@@ -1,7 +1,7 @@
 2-BIT PREDICTOR:
 
-Hits: 29
-Misses: 5
-Accuracy: 85.29%
+Hits: 109
+Misses: 15
+Accuracy: 87.9%
 
-Wasted Instructions: 8
+Wasted Instructions: 28

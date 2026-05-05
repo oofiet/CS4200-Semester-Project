@@ -740,12 +740,14 @@ def main():
             store_data = id_ex["rs2_val"]
 
             next_pc = id_ex["pc_plus4"]
+            failed_branch = False
             should_branch = (id_ex["c"]["Branch"] == 1 and branch_taken(id_ex["c"]["BrType"], id_ex["rs1_val"], id_ex["rs2_val"]))
             if id_ex["c"]["Branch"] == 1 and (should_branch != branch_predict):
                 branch_stats["misses"] += 1
                 if should_branch:
                     next_pc = id_ex["pc"] + id_ex["imm"]
-                taken = not branch_predict
+                taken = should_branch
+                failed_branch = True
                 branch_predict = not branch_predict
             elif id_ex["c"]["Jump"] == 1:
                 taken = True
@@ -754,7 +756,7 @@ def main():
                 else:
                     next_pc = id_ex["pc"] + id_ex["imm"]
             
-            if taken:
+            if taken or failed_branch:
                 flush = True
                 redirect_pc = next_pc
             elif id_ex["c"]["Branch"] == 1:

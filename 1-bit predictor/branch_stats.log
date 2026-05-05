@@ -1,7 +1,7 @@
 1-BIT PREDICTOR:
 
-Hits: 33
-Misses: 9
-Accuracy: 78.57%
+Hits: 99
+Misses: 25
+Accuracy: 79.84%
 
-Wasted Instructions: 8
+Wasted Instructions: 48

@@ -1,7 +1,7 @@
 NEVER TAKE PREDICTOR:
 
-Hits: 5
-Misses: 29
-Accuracy: 14.71%
+Hits: 14
+Misses: 110
+Accuracy: 11.29%
 
-Wasted Instructions: 58
+Wasted Instructions: 220
