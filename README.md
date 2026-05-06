@@ -1,8 +1,8 @@
 # CS4200 Semester Project
 Each folder contains its own RISC-V simulator with a different branch prediction strategy.
 
-  
-  
+<br/>
+
 **Never Take** - Never takes a branch. Horribly inefficient, although you can invert the results to see what always take would look like, which is surprisingly great in this test program.
 
 **1-Bit Predictor** - Takes a branch only if the last branch was taken. Generally decent.
