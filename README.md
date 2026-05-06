@@ -12,5 +12,5 @@ Each folder contains its own RISC-V simulator with a different branch prediction
 ## Branch Stats
 branch_stats.log in each folder contains the hits, misses, accuracy, and "wasted instructions." Wasted instructions occur when a valid instruction is flushed from either the IF or ID stages.
 
-## Example Instructions
-real_inst.txt contains the human-readable version of the test program used in each simulator.
+## Test Program
+real_inst.txt contains the human-readable version of the test program used in each simulator. Changing it has no effect on each simulator, as they read from their own hex_inst.txt files instead.
